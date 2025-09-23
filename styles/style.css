@@ -234,7 +234,7 @@
     justify-self: end;
   }
 
-  .content__section--alt {
+  .content__section:nth-child(odd):not(.content__section-images) {
     display: grid;
     grid-template-columns: min-content 1fr;
     gap: 20px;
@@ -296,7 +296,7 @@
     width: 315px;
   }
 
-  .content__section--alt .content__section-list { {
+  .content__section:nth-child(even) .content__section-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
